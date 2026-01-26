@@ -27,7 +27,7 @@ export default function Home() {
           </div>
           <ul className="grid gap-1 pl-6">
             <li className="relative flex items-start gap-4">
-              <span className="text-stone-400 font-normal">
+              <span className="text-stone-300 font-normal">
                 *
               </span>
               <span className="text-stone-400">
@@ -35,11 +35,19 @@ export default function Home() {
               </span>
             </li>
             <li className="relative flex items-start gap-4">
-              <span className="text-stone-400 font-normal">
+              <span className="text-stone-300 font-normal">
                 *
               </span>
               <span className="text-stone-400">
                 building things i&apos;d actually use
+              </span>
+            </li>
+            <li className="relative flex items-start gap-4">
+              <span className="text-stone-300 font-normal">
+                *
+              </span>
+              <span className="text-stone-400">
+                creativity through technology
               </span>
             </li>
           </ul>
