@@ -12,8 +12,22 @@ export default function Home() {
           <span className="text-stone-400">
             CS @
           </span>
-          <span className="text-stone-200">
+          <span className="text-stone-200 font-medium">
             University of Ottawa
+          </span>
+        </li>
+        <li className="flex items-baseline gap-3 pl-6">
+          <span className="text-white font-bold">
+            &gt;
+          </span>
+          <span className="text-stone-400">
+            seeking
+          </span>
+          <span className="text-stone-200 font-medium">
+            S26/F26
+          </span>
+          <span className="text-stone-400">
+            internships
           </span>
         </li>
         <li className="flex flex-col gap-2 pl-6">
@@ -22,7 +36,10 @@ export default function Home() {
               &gt;
             </span>
             <span className="text-stone-400">
-              current interests:
+              current
+            </span>
+            <span className="text-stone-200 font-medium">
+              interests:
             </span>
           </div>
           <ul className="grid gap-1 pl-6">
@@ -54,5 +71,5 @@ export default function Home() {
         </li>
       </ul>
     </div>
-  );
+  )
 }
