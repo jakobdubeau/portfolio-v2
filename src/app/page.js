@@ -1,9 +1,9 @@
 "use client"
-import UOttawaLogo from "../../public/icon/UOttawa.png"
+import Link from "next/link"
 
 export default function Home() {
   return (
-    <div className="flex flex-col pt-6 mx-6">
+    <div className="flex flex-col pt-6 mx-10">
       <ul className="grid gap-2 text-base">
         <li className="flex items-baseline gap-3 pl-6">
           <span className="text-white font-bold">
@@ -68,6 +68,23 @@ export default function Home() {
               </span>
             </li>
           </ul>
+        </li>
+        <li className="flex items-baseline gap-3 pl-6">
+          <span className="text-white font-bold">
+            &gt;
+          </span>
+          <span className="text-stone-400">
+            building
+          </span>
+          <span className="text-stone-200 font-medium">
+            <Link
+              href="https://github.com/jakobdubeau/kora"
+              target="_blank"
+							rel="noopener noreferrer"
+            >
+              kora
+            </Link>
+          </span>
         </li>
       </ul>
     </div>
