@@ -28,9 +28,7 @@ export default function Header() {
           <Link
             key={link.name}
             href={link.href}
-            className={`text-stone-400 hover:text-white duration-200 transition-all ${
-              link.isActive ? "underline-offset-2" : ""
-            }`}
+            className={`text-stone-400 hover:text-white duration-200 transition-all ${link.isActive ? "font-bold" : ""}`}
           >
             {link.name}
           </Link>
