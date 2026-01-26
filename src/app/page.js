@@ -3,7 +3,7 @@ import UOttawaLogo from "../../public/icon/UOttawa.png"
 
 export default function Home() {
   return (
-    <div className="flex flex-col mt-6">
+    <div className="flex flex-col pt-6 mx-6">
       <ul className="grid gap-2 text-base">
         <li className="flex items-baseline gap-3 pl-6">
           <span className="text-white font-bold">
