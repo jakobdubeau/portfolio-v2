@@ -25,7 +25,7 @@ export default function Footer() {
 	]
 
 	return (
-		<footer className="flex flex-col gap-4 text-sm text-stone-400">
+		<footer className="mt-auto flex flex-col gap-4 text-sm text-stone-400">
 			<hr className="border-b border-neutral-800" />
 			<div className="flex flex-row justify-between gap-4">
 				<div className="flex flex-wrap gap-4">
@@ -41,7 +41,7 @@ export default function Footer() {
 					))}
 				</div>
 			</div>
-			<p className="text-red-500">
+			<p className="text-stone-600">
 				{new Date().getFullYear()} &copy; Jakob Dubeau
 			</p>
 		</footer>
