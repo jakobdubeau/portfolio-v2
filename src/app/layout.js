@@ -29,8 +29,8 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable} ${ibmPlexMono.variable} antialiased`}>
-        <main className="flex justify-center min-h-screen selection:bg-indigo-400 bg-black font-mono">
-          <div className="flex flex-col gap-4 w-full md:max-w-187.5 m-6 md:m-20 md:mt-15">
+        <main className="flex justify-center min-h-screen selection:bg-indigo-300 bg-black font-mono">
+          <div className="flex flex-col gap-4 w-full md:max-w-150 m-6 md:m-20 md:mt-16">
             <Header />
             {children}
             <Footer />
