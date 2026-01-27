@@ -23,22 +23,22 @@ export default function ProjectCard({
             src={image}
             placeholder="blur"
             alt={imageAlt}
-            className="rounded-t-lg w-full h-60 object-cover object-center"
+            className="rounded-t-lg w-full h-50 object-cover object-center"
           />
         </div>
       </a>
-      <div className="p-5">
+      <div className="px-5 py-4">
         <div className="flex justify-between items-start gap-4">
 					<div>
 						<a
 							href={href}
         			target="_blank"
         			rel="noopener noreferrer"
-        			className="text-neutral-200 font-medium text-2xl hover:text-neutral-400 transition-colors duration-200 block tracking-tight"
+        			className="text-neutral-200 font-medium text-xl hover:text-neutral-400 transition-colors duration-200 block tracking-tight"
 						>
 							{title}
 						</a>
-						<p className="text-neutral-400 mt-2 leading-relaxed tracking-tight">
+						<p className="text-neutral-400 mt-2 text-sm leading-relaxed tracking-tight">
 							{description}
 						</p>
 					</div>

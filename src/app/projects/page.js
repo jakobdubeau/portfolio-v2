@@ -68,7 +68,7 @@ export default function Home() {
 							)
 					)}
 				/>
-			<p className="text-stone-400 mt-3">
+			<p className="text-stone-400 mt-3 mx-4">
 				You can check out my other projects{" "}
 				<Link
 					href="https://github.com/jakobdubeau?tab=repositories"
