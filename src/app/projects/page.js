@@ -4,6 +4,7 @@ import Link from "next/link"
 
 import DiscoverDailyImage from "../../../public/projects/discoverdaily.png"
 import LitematicaImage from "../../../public/projects/litematicamateriallistvisualizer.png"
+import Soon from "../../../public/projects/soon.png"
 
 
 import { useState } from "react"
@@ -41,13 +42,39 @@ export default function Home() {
 			],
 			github: "https://github.com/jakobdubeau/litematica-material-list-visualizer",
 		},
+		{
+			title: "Kora",
+			href: "https://github.com/jakobdubeau/kora",
+			description: "a study & focus timer app inspired by those korean study apps.",
+			image: Soon,
+			imageAlt: "Kora",
+			technologies: [
+				"Swift",
+				"SwiftUI",
+				"Supabase",
+				"Xcode",
+			],
+			github: "https://github.com/jakobdubeau/kora",
+		},
+		{
+			title: "Art Gallery",
+			href: "https://github.com/jakobdubeau/art-gallery",
+			description: "a way to showcase all my touchdesigner animations and cool stuff, wip.",
+			image: Soon,
+			imageAlt: "Art Gallery",
+			technologies: [
+				"JavaScript",
+				"Three.js",
+			],
+			github: "https://github.com/jakobdubeau/art-gallery",
+		},
 	]
 
 	const [search, setSearch] = useState("")
 		
 	return (
 		<div className="pt-6 mx-16 flex flex-col flex-1 min-h-0">
-			<div className="relative">
+			<div className="relative mb-3">
 				<Search className="absolute top-2.5 left-3 size-6 text-stone-400" />
 				<input
 					type="text"
