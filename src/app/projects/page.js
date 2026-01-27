@@ -12,14 +12,18 @@ export default function Home() {
 		{
 			title: "Discover Daily",
 			href: "https://discover-daily-seven.vercel.app/",
-			description: "a spotify playlist generator that makes discovering new music easy, stuff you'll actually like",
+			description: "a spotify playlist generator that makes discovering new music easy, stuff you'll actually like.",
 			image: DiscoverDailyImage,
 			imageAlt: "Discover Daily",
 			technologies: [
+				"JavaScript",
 				"React",
 				"Next.js",
+				"TailwindCSS",
+				"Supabase",
+				"OAuth",
 			],
-			github: "",
+			github: "https://github.com/jakobdubeau/discover-daily",
 		},
 	]
 
@@ -34,7 +38,7 @@ export default function Home() {
 					placeholder="search for a project, technology, etc."
 					value={search}
 					onChange={(e) => setSearch(e.target.value)}
-					className="w-full py-2 px-4 border border-stone-400 rounded-md bg-transparent focus:outline-none focus:border-stone-600 pl-12"
+					className="w-full py-2 px-4 border border-stone-400 rounded-md bg-transparent focus:outline-none focus:border-stone-600 pl-12 tracking-tight"
 				/>
 			</div>
 			<ProjectList

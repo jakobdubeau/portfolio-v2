@@ -20,7 +20,7 @@ export default function Header() {
 
   return (
     <div className="flex justify-between items-center">
-      <h1 className="text-stone-200 hover:text-white duration-200 transition-all font-semibold">
+      <h1 className="text-neutral-200 hover:text-white duration-200 transition-all font-semibold">
         <Link href="/">jakob dubeau</Link>
       </h1>
 			<div className="flex items-center gap-2 text-sm md:gap-4">

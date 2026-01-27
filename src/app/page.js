@@ -12,7 +12,7 @@ export default function Home() {
           <span className="text-stone-400">
             CS @
           </span>
-          <span className="text-stone-200 font-medium">
+          <span className="text-stone-300 font-medium">
             University of Ottawa
           </span>
         </li>
@@ -23,7 +23,7 @@ export default function Home() {
           <span className="text-stone-400">
             seeking
           </span>
-          <span className="text-stone-200 font-medium">
+          <span className="text-stone-300 font-medium">
             S26/F26
           </span>
           <span className="text-stone-400">
@@ -38,7 +38,7 @@ export default function Home() {
             <span className="text-stone-400">
               current
             </span>
-            <span className="text-stone-200 font-medium">
+            <span className="text-stone-300 font-medium">
               interests:
             </span>
           </div>
