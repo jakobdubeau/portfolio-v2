@@ -57,7 +57,7 @@ export default function Home() {
 					className="w-full py-2 px-4 border border-stone-400 rounded-md bg-transparent focus:outline-none focus:border-stone-600 pl-12 tracking-tight"
 				/>
 			</div>
-			<div className="flex-1 min-h-0 overflow-y-auto">
+			<div className="flex-1 min-h-0 overflow-y-auto [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
 				<ProjectList
 					projects={projects.filter(
 						(project) =>
