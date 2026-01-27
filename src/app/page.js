@@ -76,7 +76,7 @@ export default function Home() {
           <span className="text-stone-400">
             building
           </span>
-          <span className="text-stone-200 font-medium">
+          <span className="text-stone-400 font-medium underline underline-offset-2 hover:text-neutral-200 transition-all duration-200">
             <Link
               href="https://github.com/jakobdubeau/kora"
               target="_blank"
