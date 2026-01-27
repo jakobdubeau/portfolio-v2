@@ -3,6 +3,8 @@ import ProjectList from "../../components/ProjectList"
 import Link from "next/link"
 
 import DiscoverDailyImage from "../../../public/projects/discoverdaily.png"
+import LitematicaImage from "../../../public/projects/litematicamateriallistvisualizer.png"
+
 
 import { useState } from "react"
 import { Search } from "lucide-react"
@@ -25,13 +27,27 @@ export default function Home() {
 			],
 			github: "https://github.com/jakobdubeau/discover-daily",
 		},
+		{
+			title: "Litematica Visualizer",
+			href: "https://litematica-material-list-visualizer.vercel.app/",
+			description: "a better way to view litematica material lists when planning your next build.",
+			image: LitematicaImage,
+			imageAlt: "Litematica Material List Visualizer",
+			technologies: [
+				"JavaScript",
+				"React",
+				"Next.js",
+				"TailwindCSS",
+			],
+			github: "https://github.com/jakobdubeau/litematica-material-list-visualizer",
+		},
 	]
 
 	const [search, setSearch] = useState("")
 		
 	return (
 		<div className="pt-6 mx-16">
-			<div className="relative">
+			<div className="relative mb-5">
 				<Search className="absolute top-2.5 left-3 size-6 text-stone-400" />
 				<input
 					type="text"
@@ -51,7 +67,7 @@ export default function Home() {
 						)
 				)}
 			/>
-			<p className="text-stone-400">
+			<p className="text-stone-400 mt-3">
 				You can check out my other projects{" "}
 				<Link
 					href="https://github.com/jakobdubeau?tab=repositories"

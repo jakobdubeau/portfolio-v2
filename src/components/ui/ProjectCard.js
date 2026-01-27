@@ -11,7 +11,7 @@ export default function ProjectCard({
   github,
 }) {
   return (
-    <div className="group bg-neutral-900/50 rounded-lg shadow:md hover:shadow-lg hover:scale-103 transition-all duration-500 mt-5 mb-5 border border-white/10">
+    <div className="group bg-neutral-900/50 rounded-lg shadow:md hover:shadow-lg hover:scale-103 transition-all duration-500 border border-white/10">
       <a
         href={href}
         target="_blank"
@@ -23,7 +23,7 @@ export default function ProjectCard({
             src={image}
             placeholder="blur"
             alt={imageAlt}
-            className="rounded-t-lg w-full h-62.5 object-cover object-center"
+            className="rounded-t-lg w-full h-57.5 object-cover object-center"
           />
         </div>
       </a>
