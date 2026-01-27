@@ -2,6 +2,8 @@
 import ProjectList from "../../components/ProjectList"
 import Link from "next/link"
 
+import DiscoverDailyImage from "../../../public/projects/discoverdaily.png"
+
 import { useState } from "react"
 import { Search } from "lucide-react"
 
@@ -11,7 +13,7 @@ export default function Home() {
 			title: "Discover Daily",
 			href: "https://discover-daily-seven.vercel.app/",
 			description: "a spotify playlist generator that makes discovering new music easy, stuff you'll actually like",
-			image: "/",
+			image: DiscoverDailyImage,
 			imageAlt: "Discover Daily",
 			technologies: [
 				"React",
@@ -32,7 +34,7 @@ export default function Home() {
 					placeholder="search for a project, technology, etc."
 					value={search}
 					onChange={(e) => setSearch(e.target.value)}
-					className="w-full py-2 lx-4 border border-stone-400 rounded-md bg-transparent focus:outline-none focus:border-stone-600 pl-12"
+					className="w-full py-2 px-4 border border-stone-400 rounded-md bg-transparent focus:outline-none focus:border-stone-600 pl-12"
 				/>
 			</div>
 			<ProjectList
@@ -51,7 +53,7 @@ export default function Home() {
 					href="https://github.com/jakobdubeau?tab=repositories"
 					target="_blank"
 					rel="noopener noreferrer"
-					className="hover:text-neutral-200 transition-all duration-200"
+					className="underline underline-offset-2 hover:text-neutral-200 transition-all duration-200"
 				>
 					here
 				</Link>
