@@ -23,7 +23,7 @@ export default function ProjectCard({
             src={image}
             placeholder="blur"
             alt={imageAlt}
-            className="rounded-t-lg w-full h-57.5 object-cover object-center"
+            className="rounded-t-lg w-full h-60 object-cover object-center"
           />
         </div>
       </a>
