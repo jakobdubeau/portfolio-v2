@@ -46,8 +46,8 @@ export default function Home() {
 	const [search, setSearch] = useState("")
 		
 	return (
-		<div className="pt-6 mx-16">
-			<div className="relative mb-5">
+		<div className="pt-6 mx-16 flex flex-col flex-1 min-h-0">
+			<div className="relative">
 				<Search className="absolute top-2.5 left-3 size-6 text-stone-400" />
 				<input
 					type="text"
@@ -57,16 +57,17 @@ export default function Home() {
 					className="w-full py-2 px-4 border border-stone-400 rounded-md bg-transparent focus:outline-none focus:border-stone-600 pl-12 tracking-tight"
 				/>
 			</div>
-			<ProjectList
-				projects={projects.filter(
-					(project) =>
-						project.title.toLowerCase().includes(search.toLowerCase()) ||
-						project.description.toLowerCase().includes(search.toLowerCase()) ||
-						project.technologies.some((technology) =>
-							technology.toLowerCase().includes(search.toLowerCase())
-						)
-				)}
-			/>
+			<div className="flex-1 min-h-0 overflow-y-auto">
+				<ProjectList
+					projects={projects.filter(
+						(project) =>
+							project.title.toLowerCase().includes(search.toLowerCase()) ||
+							project.description.toLowerCase().includes(search.toLowerCase()) ||
+							project.technologies.some((technology) =>
+								technology.toLowerCase().includes(search.toLowerCase())
+							)
+					)}
+				/>
 			<p className="text-stone-400 mt-3">
 				You can check out my other projects{" "}
 				<Link
@@ -78,6 +79,7 @@ export default function Home() {
 					here
 				</Link>
 			</p>
+			</div>
 		</div>
 	)
 }
