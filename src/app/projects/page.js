@@ -9,6 +9,7 @@ import Soon from "../../../public/projects/soon.png"
 import { useState } from "react"
 import { Search } from "lucide-react"
 import useSound from "use-sound"
+import { useAudio } from "@/context/SoundContext"
 
 export default function Home() {
 	const projects = [
@@ -71,6 +72,7 @@ export default function Home() {
 	]
 
 	const [search, setSearch] = useState("")
+    const { muted } = useAudio()
 
 	const [key] = useSound("/sfx/creamy_key.mp3", { volume: 0.7, interrupt: true })
 	
@@ -85,7 +87,7 @@ export default function Home() {
 					onChange={(e) => setSearch(e.target.value)}
 					onKeyDown={(e) => {
 						if (e.key.length === 1) {
-							key()
+							!muted && key()
 						}
 					}}
 					className="w-full py-2 px-4 border border-stone-400 rounded-md bg-transparent focus:outline-none focus:border-stone-600 pl-12 tracking-tight"
