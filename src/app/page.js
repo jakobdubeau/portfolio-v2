@@ -7,7 +7,7 @@ import { useAudio } from "@/context/SoundContext"
 export default function Home() {
   const { muted } = useAudio()
 
-  const [play] = useSound("/sfx/click_close.mp3", { volume: 0.25 })
+  const [play] = useSound("/sfx/click_close.mp3", { volume: 0.2 })
   
   return (
     <div className="flex flex-col pt-5 mx-10">
