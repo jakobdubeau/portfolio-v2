@@ -23,7 +23,7 @@ export default function Header() {
   ]
   
   const [play] = useSound("/sfx/click_general.mp3", { volume: 0.2 })
-  const [mute] = useSound("/sfx/click_sfx.mp3", { volume: 0.2 })
+  const [mute] = useSound("/sfx/click_sfx.mp3", { volume: 0.3 })
 
   return (
     <div className="flex justify-between items-center">

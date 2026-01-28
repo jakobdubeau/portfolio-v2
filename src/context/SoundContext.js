@@ -1,6 +1,6 @@
 "use client"
 
-import { createContext, useContext, useState } from "react"
+import { createContext, useContext, useState, useEffect } from "react"
 
 // create context object (empty channel)
 const SoundContext = createContext({
@@ -19,7 +19,21 @@ export function useAudio() {
 export function SoundProvider({ children }) {
     const [muted, setMuted] = useState(false)
 
-    const toggleMuted = () => setMuted(mute => !mute)
+    useEffect(() => {
+        const saved = localStorage.getItem("muted")
+
+        if (saved !== null) {
+            setMuted(saved === "true")
+        }
+    }, [])
+
+    useEffect(() => {
+        localStorage.setItem("muted", String(muted))
+    }, [muted])
+
+    const toggleMuted = () => {
+        setMuted(mute => !mute)
+    }
 
     return (
         <SoundContext.Provider value={{ muted, toggleMuted }}>
