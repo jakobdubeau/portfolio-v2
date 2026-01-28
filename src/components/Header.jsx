@@ -2,6 +2,7 @@
 import Link from "next/link"
 import { usePathname } from "next/navigation"
 import useSound from "use-sound"
+import { Volume2, VolumeX } from "lucide-react"
 
 export default function Header() {
   const pathname = usePathname()

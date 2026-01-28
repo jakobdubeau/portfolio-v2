@@ -4,7 +4,7 @@ import useSound from "use-sound"
 
 export default function Home() {
 
-  const [play] = useSound("/sfx/click_close.mp3", { volume: 0.2 })
+  const [play] = useSound("/sfx/click_close.mp3", { volume: 0.3 })
   
   return (
     <div className="flex flex-col pt-5 mx-10">
