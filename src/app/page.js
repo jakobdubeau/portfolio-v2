@@ -24,7 +24,7 @@ export default function Home() {
           <span className="text-stone-400 group-hover:translate-x-2 transition-transform duration-200 ease-out">
             seeking
           </span>
-          <span className="text-stone-300 font-medium group-hover:translate-x-2 transition-transform duration-200 ease-out">
+          <span className="text-stone-400 group-hover:translate-x-2 transition-transform duration-200 ease-out">
             S26/F26
           </span>
           <span className="text-stone-400 group-hover:translate-x-2 transition-transform duration-200 ease-out">
