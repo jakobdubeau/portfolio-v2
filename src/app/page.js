@@ -89,7 +89,7 @@ export default function Home() {
       </ul>
       <Link
         href="/projects"
-        className="text-center mt-12 py-5 mx-6 rounded-lg border border-white/10 bg-neutral-900/50 text-stone-300 font-medium transition-all hover:text-neutral-200 hover:scale-103 duration-200 shadow-sm"
+        className="text-center mt-12 py-5 mx-6 rounded-lg border border-white/10 bg-neutral-900/50 text-stone-300 font-medium transition-all hover:text-stone-400 duration-300 shadow-sm"
       >
         [check out my projects]
       </Link>
