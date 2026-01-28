@@ -29,37 +29,37 @@ export default function ProjectCard({
       </a>
       <div className="px-5 py-4">
         <div className="flex justify-between items-start gap-4">
-					<div>
-						<a
-							href={href}
-        			target="_blank"
-        			rel="noopener noreferrer"
-        			className="text-neutral-200 font-medium text-xl hover:text-neutral-400 transition-colors duration-200 block tracking-tight"
-						>
-							{title}
-						</a>
-						<p className="text-neutral-400 mt-2 text-sm leading-relaxed tracking-tight">
-							{description}
-						</p>
-					</div>
-					<div className="flex gap-2">
-						<a
-							href={github}
-							target="_blank"
-							rel="noopener noreferrer"
-							className="p-2 rounded-lg text-neutral-400 hover:bg-neutral-700 transition-colors"
-						>
-							<Github className="w-5 h-5" />
-						</a>
-						<a
-							href={href}
-							target="_blank"
-							rel="noopener noreferrer"
-							className="p-2 rounded-lg text-neutral-400 hover:bg-neutral-700 transition-colors"
-						>
-							<SquareArrowOutUpRight className="w-5 h-5" />
-						</a>
-					</div>
+          <div>
+            <a
+              href={href}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-neutral-200 font-medium text-xl hover:text-neutral-400 transition-colors duration-200 block tracking-tight"
+            >
+              {title}
+            </a>
+            <p className="text-neutral-400 mt-2 text-sm leading-relaxed tracking-tight">
+              {description}
+            </p>
+          </div>
+          <div className="flex gap-2">
+            <a
+              href={github}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-2 rounded-lg text-neutral-400 hover:bg-neutral-700 transition-colors"
+            >
+              <Github className="w-5 h-5" />
+            </a>
+            <a
+              href={href}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-2 rounded-lg text-neutral-400 hover:bg-neutral-700 transition-colors"
+            >
+              <SquareArrowOutUpRight className="w-5 h-5" />
+            </a>
+          </div>
         </div>
       </div>
     </div>

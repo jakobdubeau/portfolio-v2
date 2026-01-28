@@ -3,9 +3,11 @@ import Link from "next/link"
 import { usePathname } from "next/navigation"
 import useSound from "use-sound"
 import { Volume2, VolumeX } from "lucide-react"
+import { useAudio } from "@/context/SoundContext"
 
 export default function Header() {
   const pathname = usePathname()
+  const { muted, toggleMuted } = useAudio()
 
   const links = [
     {
@@ -32,12 +34,20 @@ export default function Header() {
           <Link
             key={link.name}
             href={link.href}
-            onClick={() => play()}
+            onClick={() => !muted && play()}
             className={`text-stone-400 hover:text-neutral-200 duration-200 transition-all ${link.isActive ? "font-bold" : ""}`}
           >
             {link.name}
           </Link>
         ))}
+        <button
+          onClick={toggleMuted}
+          className="p-2 rounded-lg text-stone-400 hover:bg-stone-800 transition-colors cursor-pointer"
+          aria-label="Toggle Mute"
+          aria-pressed={muted}
+        >
+          {muted ? <VolumeX className="h-4 w-4"/> : <Volume2 className="h-4 w-4"/>}
+        </button>
 			</div>
     </div>
   )
