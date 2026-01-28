@@ -97,7 +97,7 @@ export default function Home() {
       <Link
         href="/projects"
         onClick={() => !muted && play()}
-        className="text-center mt-12 py-5 mx-6 rounded-lg border border-white/10 bg-neutral-900/50 text-stone-300 font-medium transition-all hover:text-stone-400 duration-100 shadow-sm"
+        className="text-center mt-12 py-5 mx-6 rounded-lg border border-white/10 bg-neutral-900/50 text-stone-300 font-medium transition-all hover:text-stone-400 shadow-sm"
       >
         [check out my projects]
       </Link>

@@ -40,6 +40,7 @@ export default function Header() {
             {link.name}
           </Link>
         ))}
+        <hr className="w-0.5 h-6 border-0 rounded-lg bg-neutral-800 -mr-2"/>
         <button
           onClick={toggleMuted}
           className="p-2 rounded-lg text-stone-400 hover:bg-stone-800 transition-colors cursor-pointer"
