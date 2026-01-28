@@ -50,7 +50,7 @@ export default function Footer() {
 				<div>
 					<button
 						onClick={() => setOpen(true)}
-						className="hover:scale-105 hover:text-neutral-200 transition-all duration-200 cursor-pointer"
+						className="hover:scale-105 hover:text-neutral-200 transition-all duration-200 cursor-pointer font-bold"
 					>
 						ᓚᘏᗢ
 					</button>
