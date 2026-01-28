@@ -1,6 +1,7 @@
 "use client"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
+import useSound from "use-sound"
 
 export default function Header() {
   const pathname = usePathname()
@@ -17,6 +18,8 @@ export default function Header() {
       isActive: pathname === "/projects"
     },
   ]
+  
+  const [play] = useSound("/sfx/click_general.mp3", { volume: 0.2 })
 
   return (
     <div className="flex justify-between items-center">
@@ -28,6 +31,7 @@ export default function Header() {
           <Link
             key={link.name}
             href={link.href}
+            onClick={() => play()}
             className={`text-stone-400 hover:text-neutral-200 duration-200 transition-all ${link.isActive ? "font-bold" : ""}`}
           >
             {link.name}
