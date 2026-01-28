@@ -3,7 +3,7 @@ import Link from "next/link"
 
 export default function Home() {
   return (
-    <div className="flex flex-col pt-6 mx-10">
+    <div className="flex flex-col pt-5 mx-10">
       <ul className="grid gap-2 text-base">
         <li className="flex items-baseline gap-3 pl-6 group">
           <span className="text-white font-bold group-hover:translate-x-2 transition-transform duration-200 ease-out">
