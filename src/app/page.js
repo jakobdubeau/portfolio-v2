@@ -2,8 +2,10 @@
 import Link from "next/link"
 import useSound from "use-sound"
 import { useState } from "react"
+import { useAudio } from "@/context/SoundContext"
 
 export default function Home() {
+  const { muted } = useAudio()
 
   const [play] = useSound("/sfx/click_close.mp3", { volume: 0.25 })
   
@@ -94,8 +96,8 @@ export default function Home() {
       </ul>
       <Link
         href="/projects"
-        onClick={() => play()}
-        className="text-center mt-12 py-5 mx-6 rounded-lg border border-white/10 bg-neutral-900/50 text-stone-300 font-medium transition-all hover:text-stone-400 duration-300 shadow-sm"
+        onClick={() => !muted && play()}
+        className="text-center mt-12 py-5 mx-6 rounded-lg border border-white/10 bg-neutral-900/50 text-stone-300 font-medium transition-all hover:text-stone-400 duration-100 shadow-sm"
       >
         [check out my projects]
       </Link>
