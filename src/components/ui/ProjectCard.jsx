@@ -11,7 +11,7 @@ export default function ProjectCard({
   github,
 }) {
   return (
-    <div className="group mx-3 bg-neutral-900/50 rounded-lg shadow:md hover:shadow-lg hover:scale-103 transition-all duration-500 border border-white/10">
+    <div className="group mx-3 bg-neutral-900/50 rounded-lg shadow:md hover:shadow-lg hover:scale-103 transition-all duration-300 border border-white/10">
       <a
         href={href}
         target="_blank"
