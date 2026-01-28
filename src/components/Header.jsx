@@ -23,6 +23,7 @@ export default function Header() {
   ]
   
   const [play] = useSound("/sfx/click_general.mp3", { volume: 0.2 })
+  const [mute] = useSound("/sfx/click_sfx.mp3", { volume: 0.2 })
 
   return (
     <div className="flex justify-between items-center">
@@ -42,8 +43,11 @@ export default function Header() {
         ))}
         <hr className="w-0.5 h-6 border-0 rounded-lg bg-neutral-800 -mr-2"/>
         <button
-          onClick={toggleMuted}
-          className="p-2 rounded-lg text-stone-400 hover:bg-stone-800 transition-colors cursor-pointer"
+          onClick={() => {
+            toggleMuted()
+            muted && mute()
+          }}
+          className="p-2 rounded-lg text-stone-400 hover:bg-stone-900 transition-colors cursor-pointer"
           aria-label="Toggle Mute"
           aria-pressed={muted}
         >
