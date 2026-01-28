@@ -1,4 +1,9 @@
+"use client"
 import { Github, Linkedin, Mail, CodeXml } from "lucide-react"
+import DraggableWindow from "./ui/DraggableWindow"
+import { useState } from "react"
+import Image from "next/image"
+import Hera from "../../public/images/hera.jpg"
 
 export default function Footer() {
 	const links = [
@@ -24,6 +29,8 @@ export default function Footer() {
 		},
 	]
 
+	const [open, setOpen] = useState(false)
+
 	return (
 		<footer className="mt-auto flex flex-col gap-4 text-sm text-stone-400">
 			<hr className="border-b border-neutral-800" />
@@ -39,6 +46,28 @@ export default function Footer() {
 							<link.icon className="w-5 h-5 hover:scale-105 hover:text-neutral-200 transition-all duration-200" />
 						</a>
 					))}
+				</div>
+				<div>
+					<button
+						onClick={() => setOpen(true)}
+						className="hover:scale-105 hover:text-neutral-200 transition-all duration-200 cursor-pointer"
+					>
+						ᓚᘏᗢ
+					</button>
+					{open && (
+						<DraggableWindow
+							title="hera"
+							onClose={() => setOpen(false)}
+						>
+							<Image
+								src={Hera}
+								alt="Hera my cat"
+								className="w-90 rounded-b-lg"
+								draggable={false}
+								priority
+							/>
+						</DraggableWindow>
+					)}
 				</div>
 			</div>
 			<p className="text-stone-600">
