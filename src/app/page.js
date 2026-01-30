@@ -10,7 +10,7 @@ export default function Home() {
   const [play] = useSound("/sfx/click_close.mp3", { volume: 0.2 })
   
   return (
-    <div className="flex flex-col sm:pt-5 sm:mx-10">
+    <div className="flex flex-col pt-2 sm:pt-5 sm:mx-10">
       <ul className="grid gap-4 sm:gap-2 text-base">
         <li className="flex items-baseline gap-3 pl-3 sm:pl-6 group">
           <span className="text-white font-bold group-hover:translate-x-2 transition-transform duration-200 ease-out">

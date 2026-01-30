@@ -77,7 +77,7 @@ export default function Home() {
 	const [key] = useSound("/sfx/creamy_key.mp3", { volume: 0.7, interrupt: true })
 	
 	return (
-		<div className="sm:pt-6 sm:mx-16 flex flex-col flex-1 min-h-0">
+		<div className="sm:pt-4 sm:mx-16 flex flex-col flex-1 min-h-0">
 			<div className="relative mb-3">
 				<Search className="absolute top-2 sm:top-2.5 left-3 size-6 text-stone-400" />
 				<input
