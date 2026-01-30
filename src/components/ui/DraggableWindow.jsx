@@ -14,13 +14,13 @@ export default function DraggableWindow({
     const [play] = useSound("/sfx/click_general.mp3", { volume: 0.2 })
     
     return (
-        <div className="fixed inset-0">
+        <div className="fixed inset-0 pointer-events-none">
             <Draggable
                 handle=".titlebar"
                 nodeRef={nodeRef}
                 bounds="parent"
             >
-                <div ref={nodeRef} className="fixed top-30 left-30 shadow-md hover:shadow-lg border rounded-lg bg-neutral-950 border-white/20">
+                <div ref={nodeRef} className="fixed pointer-events-auto top-30 left-30 shadow-md hover:shadow-lg border rounded-lg bg-neutral-950 border-white/20">
                     <div className="titlebar cursor-grab active:cursor-grabbing flex items-center justify-between px-3 py-2 text-stone-300 font-medium select-none">
                         <span>[{title}]</span>
                         <button
