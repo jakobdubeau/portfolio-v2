@@ -21,7 +21,7 @@ export default function DraggableWindow({
                 bounds="parent"
                 cancel="button"
             >
-                <div ref={nodeRef} className="fixed pointer-events-auto top-30 left-30 shadow-md hover:shadow-lg border rounded-lg bg-neutral-950 border-white/20">
+                <div ref={nodeRef} className="fixed pointer-events-auto top-120 sm:top-30 left-30 shadow-md hover:shadow-lg border rounded-lg bg-neutral-950 border-white/20">
                     <div className="titlebar cursor-grab active:cursor-grabbing flex items-center justify-between px-3 py-2 text-stone-300 font-medium select-none">
                         <span>[{title}]</span>
                         <button

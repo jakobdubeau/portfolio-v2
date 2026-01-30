@@ -10,9 +10,9 @@ export default function Home() {
   const [play] = useSound("/sfx/click_close.mp3", { volume: 0.2 })
   
   return (
-    <div className="flex flex-col pt-5 mx-10">
-      <ul className="grid gap-2 text-base">
-        <li className="flex items-baseline gap-3 pl-6 group">
+    <div className="flex flex-col sm:pt-5 sm:mx-10">
+      <ul className="grid gap-4 sm:gap-2 text-base">
+        <li className="flex items-baseline gap-3 pl-3 sm:pl-6 group">
           <span className="text-white font-bold group-hover:translate-x-2 transition-transform duration-200 ease-out">
             &gt;
           </span>
@@ -23,7 +23,7 @@ export default function Home() {
             University of Ottawa
           </span>
         </li>
-        <li className="flex items-baseline gap-3 pl-6 group">
+        <li className="flex items-baseline gap-3 pl-3 sm:pl-6 group">
           <span className="text-white font-bold group-hover:translate-x-2 transition-transform duration-200 ease-out">
             &gt;
           </span>
@@ -37,7 +37,7 @@ export default function Home() {
             internships
           </span>
         </li>
-        <li className="flex flex-col gap-2 pl-6 group">
+        <li className="flex flex-col gap-2 pl-3 sm:pl-6 group">
           <div className="flex items-baseline gap-3 group-hover:translate-x-2 transition-transform duration-200 ease-out">
             <span className="text-white font-bold">
               &gt;
@@ -49,7 +49,7 @@ export default function Home() {
               interests:
             </span>
           </div>
-          <ul className="grid gap-1 pl-6 group-hover:translate-x-2 transition-transform duration-200 ease-out">
+          <ul className="grid gap-2 sm:gap-1 pl-3 sm:pl-6 group-hover:translate-x-2 transition-transform duration-200 ease-out">
             <li className="relative flex items-start gap-4">
               <span className="text-stone-300 font-normal">
                 *
@@ -76,7 +76,7 @@ export default function Home() {
             </li>
           </ul>
         </li>
-        <li className="flex items-baseline gap-3 pl-6 group">
+        <li className="flex items-baseline gap-3 pl-3 sm:pl-6 group">
           <span className="text-white font-bold group-hover:translate-x-2 transition-transform duration-200 ease-out">
             &gt;
           </span>
@@ -97,7 +97,7 @@ export default function Home() {
       <Link
         href="/projects"
         onClick={() => !muted && play()}
-        className="text-center mt-12 py-5 mx-6 rounded-lg border border-white/10 bg-neutral-900/50 text-stone-300 font-medium transition-all hover:text-stone-400 shadow-sm"
+        className="text-center mt-10 sm:mt-12 py-5 mx-2 sm:mx-6 rounded-lg border border-white/10 bg-neutral-900/50 text-stone-300 font-medium transition-all hover:text-stone-400 shadow-sm"
       >
         [check out my projects]
       </Link>
