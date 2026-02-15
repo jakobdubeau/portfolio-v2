@@ -1,5 +1,5 @@
 "use client"
-import { Github, Linkedin, Mail, CodeXml, FileText } from "lucide-react"
+import { Github, Linkedin, Mail, CodeXml } from "lucide-react"
 import DraggableWindow from "./ui/DraggableWindow"
 import { useState } from "react"
 import Image from "next/image"
@@ -21,11 +21,6 @@ export default function Footer() {
 			name: "email",
 			href: "mailto:jakobdubeau@gmail.com",
 			icon: Mail,
-		},
-		{
-			name: "resume",
-			href: "Resume_W26.pdf",
-			icon: FileText,
 		},
 		{
 			name: "repo",
