@@ -4,7 +4,7 @@ import { createContext, useContext, useState, useEffect } from "react"
 
 // create context object (empty channel)
 const SoundContext = createContext({
-    muted: false,
+    muted: true,
     toggleMuted: () => {},
 })
 

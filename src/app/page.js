@@ -28,13 +28,7 @@ export default function Home() {
             &gt;
           </span>
           <span className="text-stone-400 group-hover:translate-x-2 transition-transform duration-200 ease-out">
-            seeking
-          </span>
-          <span className="text-stone-400 group-hover:translate-x-2 transition-transform duration-200 ease-out">
-            S26/F26
-          </span>
-          <span className="text-stone-400 group-hover:translate-x-2 transition-transform duration-200 ease-out">
-            internships
+            seeking new grad roles
           </span>
         </li>
         <li className="flex flex-col gap-2 pl-3 sm:pl-6 group">
@@ -63,7 +57,7 @@ export default function Home() {
                 *
               </span>
               <span className="text-stone-400">
-                building things i&apos;d actually use
+                computer graphics
               </span>
             </li>
             <li className="relative flex items-start gap-4">
@@ -71,7 +65,7 @@ export default function Home() {
                 *
               </span>
               <span className="text-stone-400">
-                creativity through technology
+                building things i&apos;d actually use
               </span>
             </li>
           </ul>
@@ -81,7 +75,7 @@ export default function Home() {
             &gt;
           </span>
           <span className="text-stone-400 group-hover:translate-x-2 transition-transform duration-200 ease-out">
-            building
+            currently working on 
           </span>
           <span className="text-stone-400 font-medium underline underline-offset-2 group-hover:translate-x-2 ease-out hover:text-neutral-200 transition-all duration-200">
             <Link
