@@ -4,7 +4,7 @@ import { createContext, useContext, useState, useEffect } from "react"
 
 // create context object (empty channel)
 const SoundContext = createContext({
-    muted: true,
+    muted: false,
     toggleMuted: () => {},
 })
 
@@ -17,7 +17,7 @@ export function useAudio() {
 // call useSound to get current value
 // whatever is wrapped inside SoundProvider will have access (children)
 export function SoundProvider({ children }) {
-    const [muted, setMuted] = useState(false)
+    const [muted, setMuted] = useState(true)
 
     useEffect(() => {
         const saved = localStorage.getItem("muted")
