@@ -77,7 +77,7 @@ export default function Home() {
 	const [key] = useSound("/sfx/creamy_key.mp3", { volume: 0.7, interrupt: true })
 	
 	return (
-		<div className="sm:pt-4 sm:mx-16 flex flex-col flex-1 min-h-0">
+		<div className="sm:pt-4 flex flex-col flex-1 min-h-0">
 			<div className="relative mb-3">
 				<Search className="absolute top-2 sm:top-2.5 left-3 size-6 text-stone-400" />
 				<input
@@ -93,7 +93,7 @@ export default function Home() {
 					className="w-full py-2 px-4 border border-stone-400 rounded-md bg-transparent focus:outline-none focus:border-stone-600 pl-10 sm:pl-12 text-sm sm:text-base tracking-tighter sm:tracking-tight"
 				/>
 			</div>
-			<div className="flex-1 min-h-0 overflow-y-auto [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+			<div className="flex-1 min-h-0 overflow-y-auto -mx-2 px-2 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
 				<ProjectList
 					projects={projects.filter(
 						(project) =>
@@ -104,7 +104,7 @@ export default function Home() {
 							)
 					)}
 				/>
-			<p className="text-stone-400 mt-3 mx-2 sm:mx-4">
+			<p className="text-stone-400 mt-3">
 				You can check out my other projects{" "}
 				<Link
 					href="https://github.com/jakobdubeau?tab=repositories"

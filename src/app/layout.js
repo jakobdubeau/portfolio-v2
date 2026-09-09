@@ -32,7 +32,7 @@ export default function RootLayout({ children }) {
       <body className={`${geistSans.variable} ${geistMono.variable} ${ibmPlexMono.variable} antialiased`}>
         <SoundProvider>
           <main className="flex justify-center h-screen selection:bg-indigo-300 bg-black font-mono">
-            <div className="flex flex-col gap-4 w-full md:max-w-150 m-6 md:m-20 md:mt-16">
+            <div className="flex flex-col gap-4 w-full md:max-w-125 m-6 md:m-20 md:mt-16">
               <Header />
               {children}
               <Footer />

@@ -47,7 +47,7 @@ export default function Header() {
             toggleMuted()
             muted && mute()
           }}
-          className="p-2 rounded-lg text-stone-400 hover:bg-stone-900 transition-colors cursor-pointer"
+          className="p-2 -mr-2 rounded-lg text-stone-400 hover:bg-stone-900 transition-colors cursor-pointer"
           aria-label="Toggle Mute"
           aria-pressed={muted}
         >
