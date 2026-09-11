@@ -2,8 +2,10 @@
 import ProjectList from "../../components/ProjectList"
 import Link from "next/link"
 
+import KoraImage from "../../../public/projects/koragallery4x.png"
 import DiscoverDailyImage from "../../../public/projects/discoverdaily.png"
 import LitematicaImage from "../../../public/projects/litematicamateriallistvisualizer.png"
+import MemoryImage from "../../../public/projects/memory.png"
 import Soon from "../../../public/projects/soon.png"
 
 import { useState } from "react"
@@ -13,6 +15,20 @@ import { useAudio } from "@/context/SoundContext"
 
 export default function Home() {
 	const projects = [
+		{
+			title: "Kora",
+			href: "https://github.com/jakobdubeau/kora",
+			description: "a study & focus timer app inspired by those study trackers.",
+			image: KoraImage,
+			imageAlt: "Kora",
+			technologies: [
+				"Swift",
+				"SwiftUI",
+				"Supabase",
+				"Xcode",
+			],
+			github: "https://github.com/jakobdubeau/kora",
+		},
 		{
 			title: "Discover Daily",
 			href: "https://discover-daily-seven.vercel.app/",
@@ -44,18 +60,18 @@ export default function Home() {
 			github: "https://github.com/jakobdubeau/litematica-material-list-visualizer",
 		},
 		{
-			title: "Kora",
-			href: "https://github.com/jakobdubeau/kora",
-			description: "a study & focus timer app inspired by those korean study apps.",
-			image: Soon,
-			imageAlt: "Kora",
+			title: "Memory Game",
+			href: "https://seg3125-memory-game.vercel.app",
+			description: "just a simple memory game.",
+			image: MemoryImage,
+			imageAlt: "Memory Match",
 			technologies: [
-				"Swift",
-				"SwiftUI",
-				"Supabase",
-				"Xcode",
+				"JavaScript",
+				"React",
+				"Next.js",
+				"TailwindCSS",
 			],
-			github: "https://github.com/jakobdubeau/kora",
+			github: "https://github.com/jakobdubeau/seg3125-memory-game",
 		},
 		{
 			title: "Art Gallery",
